@@ -87,6 +87,119 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* General Styles */
+
+   html {
+    font-size: 16px;
+    background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+   }
+
+   body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: hsl(0, 6%, 24%);
+   }
+
+   .content-wrapper {
+    margin: 30px;
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em;
+  }
+
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .875em;
+    line-height: 28px;
+  }
+
+  /* Base Header */
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin: 30px 8%;
+  }
+
+  header .logo img {
+    width: 110px;
+  }
+
+  /* Mobile Styles - Landing Page */
+
+  .hero-image #img1 {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .hero-image #img2 {
+    display: none;
+  }
+
+  .landing-page h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.28em;
+    line-height: 2.5rem;
+    margin-top: 67px;
+  }
+
+  .landing-page h1 span {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+  }
+
+  .landing-page p {
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+  }
+  
+  .landing-page form {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .landing-page input[type=text] {
+    flex-grow: 2;
+    padding: 15px;
+    background-color: hsl(0, 100%, 98%);
+    border-color: hsl(0, 36%, 70%);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+  }
+
+  .landing-page input::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.5;
+  }
+
+  .landing-page button {
+    padding: 16px 27px;
+    border-radius: 50px !important;
+    position: absolute;
+    margin: 0 !important;
+    border-style: none;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    box-shadow: 0px 5px 15px hsl(0, 36%, 70%);
+  }
+
+  
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -175,8 +288,99 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 1200px) {
+
+  /* General Styles */
+
+  html {
+    min-width: 100%;
+    background-image: url(../img/bg-pattern-desktop.svg),
+    linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-position:center center; 
+    background-repeat:no-repeat; 
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+   }
+
+   .content-wrapper {
+    margin-left: 12%;
+  }
+
+  h1 {
+    font-size: 4em;
+    line-height: 4em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  header .content-wrapper {
+    display: block;
+    float: left;
+    margin-top: 4%;
+  }
+
+  header .logo img {
+    width: 100%;
+  }
+
+  /* Desktop Styles - Landing Page */
+
+  .hero-image #img2 {
+    display: block;
+    height: 100vh;
+    width: 42%;
+    float: right;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .hero-image #img1 {
+    display: none;
+  }
+
+  .landing-page .content-wrapper {
+    float: left;
+    width: 46%;
+    margin-left: 8%;
+  }
+
+  .landing-page h1 {
+    text-align: left;
+    margin-top: 17%;
+    margin-bottom: 0;
+    line-height: 4rem;
+  }
+
+  .landing-page p {
+    text-align: left;
+    color: hsl(0, 36%, 70%);
+    width: 65%;
+    margin: 5% 0;
+  }
+
+  .landing-page form {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .landing-page input[type=text] {
+    flex-grow: .6;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .landing-page button {
+    padding: 21px 40px;
+    margin-left: 56% !important;
+  }
+
 }
 
 @media print,

@@ -16,6 +16,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -24,8 +28,35 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+<header>
+  <div class="content-wrapper">
+  <div class="logo">
+    <a href="#">
+      <img src="../apparel-coming-soon/img/logo.svg" alt="Base Apparel logo">
+    </a>
+  </div>
+</div>
+</header>
+
+<main>
+  <section>
+    <div class="hero-image">
+      <img id="img1" src="../apparel-coming-soon/img/hero-mobile.jpg" alt="Young fashionable woman">
+      <img id="img2" src="../apparel-coming-soon/img/hero-desktop.jpg" alt="Young fashionable woman">
+    </div>
+  </section>
+  <section class="landing-page">
+    <div class="content-wrapper">
+    <h1><span>We're</span><br>Coming<br>Soon</h1>
+    <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    <form id="form">
+    <input id="email" type="text" name="email" size="10" placeholder="Email Address">
+    <button type="submit"><img src="../apparel-coming-soon/img/icon-arrow.svg" alt=">"></button>
+    </form>
+    </div>
+  </section>
+</main>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
