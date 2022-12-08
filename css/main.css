@@ -173,6 +173,10 @@ textarea {
     position: relative;
   }
 
+  .landing-page input[type=text]:focus {
+    outline-color: hsl(0, 36%, 70%);
+  }
+
   .landing-page input[type=text] {
     flex-grow: 2;
     padding: 15px;
@@ -188,13 +192,17 @@ textarea {
     opacity: 0.5;
   }
 
-  .landing-page button {
+  .landing-page .button1 {
     padding: 16px 27px;
     border-radius: 50px !important;
     position: absolute;
     margin: 0 !important;
     border-style: none;
     background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    transition: 0.4s;
+  }
+
+  .button1:hover {
     box-shadow: 0px 5px 15px hsl(0, 36%, 70%);
   }
 
@@ -376,7 +384,7 @@ textarea {
     border-radius: 30px;
   }
 
-  .landing-page button {
+  .landing-page .button1 {
     padding: 21px 40px;
     margin-left: 56% !important;
   }
