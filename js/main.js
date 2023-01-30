@@ -11,6 +11,7 @@ function checkEmail() {
         });
         error.textContent = "Please enter a valid email";
         error.style.color = "black";
+
         email.focus;
         return false;
     }
